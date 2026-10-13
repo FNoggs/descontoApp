@@ -8,6 +8,7 @@ class PedidoService:
         self.pedidos.append(pedido)
 
     def processar_pedidos(self):
+        pedido = self.repository.listar_pedido()
         
         for pedido in self.pedidos:
             print(f"Cliente: {pedido.cliente}")
