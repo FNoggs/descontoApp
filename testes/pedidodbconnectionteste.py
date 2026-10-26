@@ -3,7 +3,7 @@ from src.repositories.pedido_repository import PedidoRepository
 from src.services.pedido_services import PedidoService
 from src.database.connection import DatabaseConnection
 from src.models.pedido import Pedido
-from src.models.desconto import DescontoNormal, DescontoVIP, DescontoPremium
+from src.models.desconto import DescontoNormal, DescontoVip, DescontoPremium
 
 if __name__ == "__main__":
     database = DatabaseConnection()
@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     pedido1 = Pedido("Cliente 1", DescontoNormal())
     pedido1.valor_original = 100.0
-    pedido2 = Pedido("Cliente 2", DescontoVIP())
+    pedido2 = Pedido("Cliente 2", DescontoVip())
     pedido2.valor_original = 100.0
     pedido3 = Pedido("Cliente 3", DescontoPremium())
     pedido3.valor_original = 100.0
