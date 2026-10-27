@@ -1,5 +1,5 @@
 from src.app.entities.pedido import Pedido
-from src.app.entities.desconto import DescontoNormal, DescontoVIP, DescontoPremium
+from src.app.entities.desconto import DescontoNormal, DescontoVip, DescontoPremium
 from src.app.gateways.pedido_gateway import IPedidoGateway
 from src.app.dtos.criar_pedido_input_dto import CriarPedidoInputDTO
 from src.app.dtos.criar_pedido_output_dto import CriarPedidoOutputDTO
@@ -13,7 +13,7 @@ class CriarPedido:
         if tipo_desconto == "normal":
             desconto = DescontoNormal()
         elif tipo_desconto == "vip":
-            desconto = DescontoVIP()
+            desconto = DescontoVip()
         elif tipo_desconto == "premium":
             desconto = DescontoPremium()
         else:
