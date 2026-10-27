@@ -1,3 +1,9 @@
 .pyc
 mog.py
 nog.py
+
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
