@@ -1,4 +1,4 @@
-from src.models.desconto import IDesconto  
+from src.app.entities.desconto import IDesconto
 
 # Classe Contexto
 class Pedido:
